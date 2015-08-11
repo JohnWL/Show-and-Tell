@@ -15,6 +15,7 @@ gem 'paperclip', '~> 4.3.0'
 gem 'pry'
 gem 'pry-remote'
 gem 'pry-nav'
+gem 'acts_as_votable', '~> 0.10.0'
 
 group :development, :test do
   gem 'byebug'

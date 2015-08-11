@@ -2,5 +2,6 @@
   <%= link_to (image_tag p.image.url(:small)), p %>
   <h2><%= link_to p.title, p %></h2>
   <p><%= p.comments.count %> Comments</p>
+  <p><%= p.get_likes.size %> Likes</p>
 <% end %>
 <%= link_to "Add Post", new_post_path %>
