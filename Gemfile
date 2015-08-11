@@ -12,6 +12,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'devise', '~> 3.5.2'
 gem 'simple_form', '~> 3.1.0'
 gem 'paperclip', '~> 4.3.0'
+gem 'pry'
+gem 'pry-remote'
+gem 'pry-nav'
 
 group :development, :test do
   gem 'byebug'
