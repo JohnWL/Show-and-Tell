@@ -4,8 +4,8 @@
   <title>Dribbble</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <link href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css" rel="stylesheet"></link>
-  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"></link>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css" rel="stylesheet"></link>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"></link>
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -17,9 +17,9 @@
       </div>
       <nav>
         <% if user_signed_in? %>
-          <%= link_to "My Account", current_user.name, edit_user_registration_path %>
-          <%= link_to "Log Out", destroy_user_session_path, method: :delete %>
           <%= link_to "Add Post", new_post_path, class: "button" %>
+          <%= link_to "My Account", edit_user_registration_path %>
+          <%= link_to "Log Out", destroy_user_session_path, method: :delete %>
         <% else %>
           <%= link_to "Log In", new_user_session_path %>
           <%= link_to "Register", new_user_registration_path, class: "button" %>
